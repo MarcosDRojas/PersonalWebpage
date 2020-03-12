@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import AppBar from "@material-ui/core/AppBar";
-import { Toolbar, IconButton, List, ListItem, ListItemText, ClickAwayListener } from "@material-ui/core";
+import { Toolbar, IconButton, List, ListItem, ListItemText } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";

@@ -1,18 +1,28 @@
 import React, { Fragment } from "react";
 
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Paper, Typography, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Header from "./Header";
 import TextFade from "../transitions/textFade";
 
 const useStyles = makeStyles((theme) => ({
-    grid: {
-        width: "50vw",
-        height: "100vh",
+    // paperName: {
+    //     height: "50%",
+    //     width: "50%",
+    // },
+    // root: {
+    //     flexGrow: 1,
+    // },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: "center",
+        height: "100%",
+        width: "100%",
     },
-    paperName: {
-        //backgroundColor: "#A8D0E6",
+    mainContainer: {
+        height: "600px",
+        width: "1200px",
     },
 }));
 
@@ -22,13 +32,15 @@ export default function Layout(props) {
     return (
         <Fragment>
             <Header />
-            <Grid container direction="row" alignItems="center">
-                <Grid className={classes.grid} item sm={12}>
-                    <Paper className={classes.paperName}>
-                        <Typography align="center" variant="h2"></Typography>
-                    </Paper>
+            <div>
+                <Grid container className={classes.mainContainer}>
+                    <Grid container item xs={12} sm={6}>
+                        <Paper className={classes.paper}>
+                            <Typography variant="h3">Hello World! My name is Marcos Rojas</Typography>
+                        </Paper>
+                    </Grid>
                 </Grid>
-            </Grid>
+            </div>
         </Fragment>
     );
 }

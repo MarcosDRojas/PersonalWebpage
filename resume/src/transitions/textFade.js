@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useSpring, animated, useTrail } from "react-spring";
+// import React, { useState } from "react";
+// import { useSpring, animated, useTrail } from "react-spring";
 
-const config = { mass: 5, tension: 2000, friction: 200 };
+// const config = { mass: 5, tension: 2000, friction: 200 };
 
 // export default function TextFade(props) {
 //     const [toggle, setToggle] = useState(false);
