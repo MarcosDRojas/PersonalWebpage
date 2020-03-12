@@ -36,7 +36,7 @@ export default function Layout(props) {
                 <Grid container className={classes.mainContainer}>
                     <Grid container item xs={12} sm={6}>
                         <Paper className={classes.paper}>
-                            <Typography variant="h3">Hello World! My name is Marcos Rojas</Typography>
+                            <Typography variant="h3"></Typography>
                         </Paper>
                     </Grid>
                 </Grid>
