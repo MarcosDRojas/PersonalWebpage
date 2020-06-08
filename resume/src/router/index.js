@@ -9,13 +9,13 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
-  }
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;
